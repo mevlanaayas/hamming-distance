@@ -1,0 +1,758 @@
+LOCUS       V01148                  7433 bp    RNA     linear   VRL 26-JUL-2016
+DEFINITION  Genome of human poliovirus type 1 (Mahoney strain). (One of two
+            versions.).
+ACCESSION   V01148
+VERSION     V01148.1
+KEYWORDS    coat protein; genome; polyprotein.
+SOURCE      Human poliovirus 1
+  ORGANISM  Human poliovirus 1
+            Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA
+            stage; Picornavirales; Picornaviridae; Enterovirus; Enterovirus C.
+REFERENCE   1  (bases 6375 to 7433)
+  AUTHORS   Kitamura,N. and Wimmer,E.
+  TITLE     Sequence of 1060 3'-terminal nucleotides of poliovirus RNA as
+            determined by a modification of the dideoxynucleotide method
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 77 (6), 3196-3200 (1980)
+   PUBMED   6158042
+REFERENCE   2  (bases 5355 to 5522)
+  AUTHORS   Kitamura,N., Adler,C.J., Rothberg,P.G., Martinko,J., Nathenson,S.G.
+            and Wimmer,E.
+  TITLE     The genome-linked protein of picornaviruses. VII. Genetic mapping
+            of poliovirus VPg by protein and RNA sequence studies
+  JOURNAL   Cell 21 (1), 295-302 (1980)
+   PUBMED   6250717
+REFERENCE   3  (bases 1 to 7433)
+  AUTHORS   Kitamura,N., Semler,B.L., Rothberg,P.G., Larsen,G.R., Adler,C.J.,
+            Dorner,A.J., Emini,E.A., Hanecak,R., Lee,J.J., van der Werf,S.,
+            Anderson,C.W. and Wimmer,E.
+  TITLE     Primary structure, gene organization and polypeptide expression of
+            poliovirus RNA
+  JOURNAL   Nature 291 (5816), 547-553 (1981)
+   PUBMED   6264310
+REFERENCE   4  (bases 1 to 7432)
+  AUTHORS   Racaniello,V.R. and Baltimore,D.
+  TITLE     Molecular cloning of poliovirus cDNA and determination of the
+            complete nucleotide sequence of the viral genome
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 78 (8), 4887-4891 (1981)
+   PUBMED   6272282
+REFERENCE   5
+  AUTHORS   Emini,E.A., Elzinga,M. and Wimmer,E.
+  TITLE     Carboxy-terminal analysis of poliovirus proteins: termination of
+            poliovirus RNA translation and location of unique poliovirus
+            polyprotein cleavage sites
+  JOURNAL   J. Virol. 42 (1), 194-199 (1982)
+   PUBMED   6283138
+REFERENCE   6
+  AUTHORS   Dorner,A.J., Dorner,L.F., Larsen,G.R., Wimmer,E. and Anderson,C.W.
+  TITLE     Identification of the initiation site of poliovirus polyprotein
+            synthesis
+  JOURNAL   J. Virol. 42 (3), 1017-1028 (1982)
+   PUBMED   6284987
+COMMENT     This entry was previously called PIPVX1Z1.  It replaces that entry
+            and the entries PIPVX1 and PIPVX2.
+            
+            See also entries <POLIO1B> (for another version of this genome) and
+            <POLIOS1> (for the genome of the Sabin 1 strain).
+            
+            The sequence and features listed here are taken from [3]; conflicts
+            with the other references are noted in the feature table.  Note
+            that [3] reports only one strand sequenced. The sequence reported
+            in [4] is available in entry <POLIO1B>. Post-translational
+            proteolytic cleavage of polyprotein NCVPOO produces the other
+            peptides indicated below.  Identification of reading frames is
+            preliminary.
+FEATURES             Location/Qualifiers
+     source          1..7433
+                     /organism="Human poliovirus 1"
+                     /mol_type="genomic RNA"
+                     /strain="Mahoney strain"
+                     /db_xref="taxon:12080"
+     misc_difference 284..286
+                     /note="GUU is CGCTC in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 350
+                     /note="U is G in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 385
+                     /note="C is GC in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 485..486
+                     /note="GU is G in [4];
+                     conflict"
+                     /citation=[4]
+     CDS             <698..7364
+                     /note="unnamed protein product; open reading frame"
+                     /codon_start=2
+                     /protein_id="CAA24445.1"
+                     /db_xref="GOA:Q84865"
+                     /db_xref="HSSP:1RDR"
+                     /db_xref="InterPro:IPR000081"
+                     /db_xref="InterPro:IPR000199"
+                     /db_xref="InterPro:IPR000605"
+                     /db_xref="InterPro:IPR001205"
+                     /db_xref="InterPro:IPR001676"
+                     /db_xref="InterPro:IPR002527"
+                     /db_xref="InterPro:IPR003138"
+                     /db_xref="InterPro:IPR003593"
+                     /db_xref="InterPro:IPR004004"
+                     /db_xref="InterPro:IPR007094"
+                     /db_xref="InterPro:IPR009003"
+                     /db_xref="InterPro:IPR014759"
+                     /db_xref="InterPro:IPR014838"
+                     /db_xref="UniProtKB/TrEMBL:Q84865"
+                     /translation="VQFQQLFQSDNCIIMGAQVSSQKVGAHENSNRAYGGSTINYTTI
+                     NYYRDSASNAASKQDFSQDPSKFTEPIKDVLIKTAPMLNSPNIEACGYSDRVLQLTLG
+                     NSTITTQEAANSVVAYGRWPEYLRDSEANPVDQPTEPDVAACRFYTLDTVSWTKESRG
+                     WWWKLPDALRDMGLFGQNMYYHYLGRSGYTVHVQCNASKFHQGALGVFAVPEMCLAGD
+                     SNTTTMHTSYQNANPGEKGGTFTGTFTPDNNQTSPARSSARWITSLEMARCWGMPLCS
+                     AQIINLRTNNCATLVLPYVNSLSLDSMVKHNNWGIAILPLAPLNFVSESSPEIPITLT
+                     IAPMCCEFNGLRNITLPRLQGLPVMNTPGSNQYLTADNFQSPCALPEFDVTPPIDIPG
+                     EVKNMMELAEIDTMIPFDLSATKKNTMEMYRVRLSDKPHTAASILCLSLSPASDPRLS
+                     HTMLGEILNYYTHWAGSLKFTFLFCGSMMATGKLLVSYAPPGADPPKKRKEAMLGTHV
+                     IWDIGLQSSCTMVVPWISNSTYRQTIDDSFTEGGYISVFYQTRIVVPLSTPREMDILG
+                     FVSACNDFSVRLLRDTTHIEQKALAQGLGQMLESMIDNTVRETVGAATSRDALPNTEA
+                     SGPTHSKEIPALTAVETGATNPLVPSDTVQTRHVVQHRSRSESSIESFFARGACVTIM
+                     TVDNPASTTNKDKLFAVWKITYKDTVQLRRKLEFFTYSRFDMELTFVVTANFTETNNG
+                     HALNQVYQIMYVPPGAPVPEKWDDYTWQTSSNPSIFYTYGTAPARISVPYVGISNAYS
+                     HFYDGFSKVPLKDQSAALGDSLYGAASLNDFGILAVRVVNDHNPTKVTSKIRVYLKPK
+                     HIRVWCPRPPRQLAYYGPGVDYKDGTLTPLSTKDLTTYGFGHQNKAVYTAGYKICNYH
+                     LATQDDLQNAVNVMWSRDLLVTESRAQGTDSIARCNCNAGVYYCESRRKYYPVSFVGP
+                     TFQYMEANNYYPVRYQSHMLIGHGFESPGDCGGILRCHHGVIGIITAGGEGLVAFSDI
+                     RDLYAYEEEAMEQGITNYIESLGAAFGSGFTQQISDKITELTNMVTSTITEKLLKNLI
+                     KIISSLVIITRNYEDTTTVLATLALLGCDASPWQWLRKKACDVLEIPYVIKQGDSWLK
+                     KFTEACQRAKGLEWVSNKISKFIDWLKEKIIPQARDKLEFVTKLRQLEMLENQISTIH
+                     QSCPSQEHQEILFNNVRWLSIQSKRFAPLYAVEAKRIQKLEHTINNYIQFKSKHRIEP
+                     VCLLVHGSPGTGKSVATNLIARAIAERENTSTYSLPPDPSHFDGYKQQGVVIMDDLNQ
+                     NPDGADMKLFCQMVSTVEFIPPMASLEEKGILFTSNYVLASTNSSRISPPTVAHSDAL
+                     ARRFAFDMDIQVMNEYSRDGKLNMAMATEMCKNCHQPANFKRCCPLVCGKAIQLMDKS
+                     SRVRYSIDQITTMIINERNRRSNIGNCMEALFQGPLQYKDLKIDIKTSPPPECINDLL
+                     QAVDSQEVRDYCEKKGWIVNITSQVQTERNINRAMTILQAVTTFAAVAGVVYVMYKLF
+                     AGHQGAYTGLPNKKPNVPTIRTAKVQGPGFDYAVAMAKRNIVTATTSKGEFTMLGVHD
+                     NVAILPTHASPGESIVIDGKEAEILDAKVFEDQAGTNFEITIITLKRNEKFRDIRPHI
+                     PTQITETNDGVLIVNTSKYPNMYVPVRAVTEQGYLNLGGRQTARTLMYNFPTRAGQCG
+                     GVITCTGKSSGCMLVDGSHGFAAALKRSLFTQSQGEIPWMRPSKDAGYPIINAPSKTK
+                     LEPSAFHYVFEGVKEPAVLTKNDPRLKTDFEEAIFSKYVGNKITEVDEYMKEAVDHYA
+                     GQLMSLDINIEQMCLEDAMYGTDGLEALDLSTSAGYPYVAMGKKKRDILNKQTRDTKE
+                     MQKLLDTYGINLPLVTYVKDELRSKTKVEQGKSRLIEASSLNDSVAMRMAFGNLYAAF
+                     HKNPGVITGSAVGCDPDLFWSKIPVLMEEKLFAFDYTGYDASLSPAWFEALKMVLEKI
+                     GFGDRVDYIDYLNHSHHLYKNKTYCVKGGMPSGCSGTSIFNSMINNLIIRTLLLKTYK
+                     GIDLDHLKMIAYGDDVIASYPHEVDASLLAQSGKDYGLTMTPADKSATFETVTWENVT
+                     FLKRFFRADEKYPFLIHPVMPMKEIHESIRWTKDPRNTQDHVRSLCLLAWHNGEEEYN
+                     KFLAKIRSVPIGRALLLPEYSTLYRRWLDSF"
+     CDS             741..7364
+                     /note="unnamed protein product; reading frame NCVPOO"
+                     /codon_start=1
+                     /protein_id="CAA24446.1"
+                     /db_xref="GOA:P03300"
+                     /db_xref="InterPro:IPR000081"
+                     /db_xref="InterPro:IPR000199"
+                     /db_xref="InterPro:IPR000605"
+                     /db_xref="InterPro:IPR001205"
+                     /db_xref="InterPro:IPR001676"
+                     /db_xref="InterPro:IPR002527"
+                     /db_xref="InterPro:IPR003138"
+                     /db_xref="InterPro:IPR003593"
+                     /db_xref="InterPro:IPR004004"
+                     /db_xref="InterPro:IPR007094"
+                     /db_xref="InterPro:IPR009003"
+                     /db_xref="InterPro:IPR014759"
+                     /db_xref="InterPro:IPR014838"
+                     /db_xref="PDB:1AL2"
+                     /db_xref="PDB:1AR6"
+                     /db_xref="PDB:1AR7"
+                     /db_xref="PDB:1AR8"
+                     /db_xref="PDB:1AR9"
+                     /db_xref="PDB:1ASJ"
+                     /db_xref="PDB:1DGI"
+                     /db_xref="PDB:1FPT"
+                     /db_xref="PDB:1HXS"
+                     /db_xref="PDB:1L1N"
+                     /db_xref="PDB:1NG7"
+                     /db_xref="PDB:1NN8"
+                     /db_xref="PDB:1PO1"
+                     /db_xref="PDB:1PO2"
+                     /db_xref="PDB:1POV"
+                     /db_xref="PDB:1RA6"
+                     /db_xref="PDB:1RA7"
+                     /db_xref="PDB:1RAJ"
+                     /db_xref="PDB:1RDR"
+                     /db_xref="PDB:1TQL"
+                     /db_xref="PDB:1VBD"
+                     /db_xref="PDB:1XYR"
+                     /db_xref="PDB:2BBL"
+                     /db_xref="PDB:2BBP"
+                     /db_xref="PDB:2IJD"
+                     /db_xref="PDB:2IJF"
+                     /db_xref="PDB:2ILY"
+                     /db_xref="PDB:2ILZ"
+                     /db_xref="PDB:2IM0"
+                     /db_xref="PDB:2IM1"
+                     /db_xref="PDB:2IM2"
+                     /db_xref="PDB:2IM3"
+                     /db_xref="PDB:2PLV"
+                     /db_xref="PDB:3EPC"
+                     /db_xref="PDB:3IYB"
+                     /db_xref="PDB:3IYC"
+                     /db_xref="UniProtKB/Swiss-Prot:P03300"
+                     /translation="MGAQVSSQKVGAHENSNRAYGGSTINYTTINYYRDSASNAASKQ
+                     DFSQDPSKFTEPIKDVLIKTAPMLNSPNIEACGYSDRVLQLTLGNSTITTQEAANSVV
+                     AYGRWPEYLRDSEANPVDQPTEPDVAACRFYTLDTVSWTKESRGWWWKLPDALRDMGL
+                     FGQNMYYHYLGRSGYTVHVQCNASKFHQGALGVFAVPEMCLAGDSNTTTMHTSYQNAN
+                     PGEKGGTFTGTFTPDNNQTSPARSSARWITSLEMARCWGMPLCSAQIINLRTNNCATL
+                     VLPYVNSLSLDSMVKHNNWGIAILPLAPLNFVSESSPEIPITLTIAPMCCEFNGLRNI
+                     TLPRLQGLPVMNTPGSNQYLTADNFQSPCALPEFDVTPPIDIPGEVKNMMELAEIDTM
+                     IPFDLSATKKNTMEMYRVRLSDKPHTAASILCLSLSPASDPRLSHTMLGEILNYYTHW
+                     AGSLKFTFLFCGSMMATGKLLVSYAPPGADPPKKRKEAMLGTHVIWDIGLQSSCTMVV
+                     PWISNSTYRQTIDDSFTEGGYISVFYQTRIVVPLSTPREMDILGFVSACNDFSVRLLR
+                     DTTHIEQKALAQGLGQMLESMIDNTVRETVGAATSRDALPNTEASGPTHSKEIPALTA
+                     VETGATNPLVPSDTVQTRHVVQHRSRSESSIESFFARGACVTIMTVDNPASTTNKDKL
+                     FAVWKITYKDTVQLRRKLEFFTYSRFDMELTFVVTANFTETNNGHALNQVYQIMYVPP
+                     GAPVPEKWDDYTWQTSSNPSIFYTYGTAPARISVPYVGISNAYSHFYDGFSKVPLKDQ
+                     SAALGDSLYGAASLNDFGILAVRVVNDHNPTKVTSKIRVYLKPKHIRVWCPRPPRQLA
+                     YYGPGVDYKDGTLTPLSTKDLTTYGFGHQNKAVYTAGYKICNYHLATQDDLQNAVNVM
+                     WSRDLLVTESRAQGTDSIARCNCNAGVYYCESRRKYYPVSFVGPTFQYMEANNYYPVR
+                     YQSHMLIGHGFESPGDCGGILRCHHGVIGIITAGGEGLVAFSDIRDLYAYEEEAMEQG
+                     ITNYIESLGAAFGSGFTQQISDKITELTNMVTSTITEKLLKNLIKIISSLVIITRNYE
+                     DTTTVLATLALLGCDASPWQWLRKKACDVLEIPYVIKQGDSWLKKFTEACQRAKGLEW
+                     VSNKISKFIDWLKEKIIPQARDKLEFVTKLRQLEMLENQISTIHQSCPSQEHQEILFN
+                     NVRWLSIQSKRFAPLYAVEAKRIQKLEHTINNYIQFKSKHRIEPVCLLVHGSPGTGKS
+                     VATNLIARAIAERENTSTYSLPPDPSHFDGYKQQGVVIMDDLNQNPDGADMKLFCQMV
+                     STVEFIPPMASLEEKGILFTSNYVLASTNSSRISPPTVAHSDALARRFAFDMDIQVMN
+                     EYSRDGKLNMAMATEMCKNCHQPANFKRCCPLVCGKAIQLMDKSSRVRYSIDQITTMI
+                     INERNRRSNIGNCMEALFQGPLQYKDLKIDIKTSPPPECINDLLQAVDSQEVRDYCEK
+                     KGWIVNITSQVQTERNINRAMTILQAVTTFAAVAGVVYVMYKLFAGHQGAYTGLPNKK
+                     PNVPTIRTAKVQGPGFDYAVAMAKRNIVTATTSKGEFTMLGVHDNVAILPTHASPGES
+                     IVIDGKEAEILDAKVFEDQAGTNFEITIITLKRNEKFRDIRPHIPTQITETNDGVLIV
+                     NTSKYPNMYVPVRAVTEQGYLNLGGRQTARTLMYNFPTRAGQCGGVITCTGKSSGCML
+                     VDGSHGFAAALKRSLFTQSQGEIPWMRPSKDAGYPIINAPSKTKLEPSAFHYVFEGVK
+                     EPAVLTKNDPRLKTDFEEAIFSKYVGNKITEVDEYMKEAVDHYAGQLMSLDINIEQMC
+                     LEDAMYGTDGLEALDLSTSAGYPYVAMGKKKRDILNKQTRDTKEMQKLLDTYGINLPL
+                     VTYVKDELRSKTKVEQGKSRLIEASSLNDSVAMRMAFGNLYAAFHKNPGVITGSAVGC
+                     DPDLFWSKIPVLMEEKLFAFDYTGYDASLSPAWFEALKMVLEKIGFGDRVDYIDYLNH
+                     SHHLYKNKTYCVKGGMPSGCSGTSIFNSMINNLIIRTLLLKTYKGIDLDHLKMIAYGD
+                     DVIASYPHEVDASLLAQSGKDYGLTMTPADKSATFETVTWENVTFLKRFFRADEKYPF
+                     LIHPVMPMKEIHESIRWTKDPRNTQDHVRSLCLLAWHNGEEEYNKFLAKIRSVPIGRA
+                     LLLPEYSTLYRRWLDSF"
+     CDS             <744..>3380
+                     /note="unnamed protein product; reading frame P1-1a"
+                     /codon_start=1
+                     /protein_id="CAA24447.1"
+                     /db_xref="GOA:Q84866"
+                     /db_xref="HSSP:2PLV"
+                     /db_xref="InterPro:IPR001676"
+                     /db_xref="InterPro:IPR003138"
+                     /db_xref="UniProtKB/TrEMBL:Q84866"
+                     /translation="GAQVSSQKVGAHENSNRAYGGSTINYTTINYYRDSASNAASKQD
+                     FSQDPSKFTEPIKDVLIKTAPMLNSPNIEACGYSDRVLQLTLGNSTITTQEAANSVVA
+                     YGRWPEYLRDSEANPVDQPTEPDVAACRFYTLDTVSWTKESRGWWWKLPDALRDMGLF
+                     GQNMYYHYLGRSGYTVHVQCNASKFHQGALGVFAVPEMCLAGDSNTTTMHTSYQNANP
+                     GEKGGTFTGTFTPDNNQTSPARSSARWITSLEMARCWGMPLCSAQIINLRTNNCATLV
+                     LPYVNSLSLDSMVKHNNWGIAILPLAPLNFVSESSPEIPITLTIAPMCCEFNGLRNIT
+                     LPRLQGLPVMNTPGSNQYLTADNFQSPCALPEFDVTPPIDIPGEVKNMMELAEIDTMI
+                     PFDLSATKKNTMEMYRVRLSDKPHTAASILCLSLSPASDPRLSHTMLGEILNYYTHWA
+                     GSLKFTFLFCGSMMATGKLLVSYAPPGADPPKKRKEAMLGTHVIWDIGLQSSCTMVVP
+                     WISNSTYRQTIDDSFTEGGYISVFYQTRIVVPLSTPREMDILGFVSACNDFSVRLLRD
+                     TTHIEQKALAQGLGQMLESMIDNTVRETVGAATSRDALPNTEASGPTHSKEIPALTAV
+                     ETGATNPLVPSDTVQTRHVVQHRSRSESSIESFFARGACVTIMTVDNPASTTNKDKLF
+                     AVWKITYKDTVQLRRKLEFFTYSRFDMELTFVVTANFTETNNGHALNQVYQIMYVPPG
+                     APVPEKWDDYTWQTSSNPSIFYTYGTAPARISVPYVGISNAYSHFYDGFSKVPLKDQS
+                     AALGDSLYGAASLNDFGILAVRVVNDHNPTKVTSKIRVYLKPKHIRVWCPRPPRQLAY
+                     YGPGVDYKDGTLTPLSTKDLTTY"
+     CDS             <744..>1760
+                     /note="unnamed protein product; reading frame P1-VPO"
+                     /codon_start=1
+                     /protein_id="CAA24448.1"
+                     /db_xref="GOA:Q84867"
+                     /db_xref="HSSP:2PLV"
+                     /db_xref="InterPro:IPR001676"
+                     /db_xref="InterPro:IPR003138"
+                     /db_xref="UniProtKB/TrEMBL:Q84867"
+                     /translation="GAQVSSQKVGAHENSNRAYGGSTINYTTINYYRDSASNAASKQD
+                     FSQDPSKFTEPIKDVLIKTAPMLNSPNIEACGYSDRVLQLTLGNSTITTQEAANSVVA
+                     YGRWPEYLRDSEANPVDQPTEPDVAACRFYTLDTVSWTKESRGWWWKLPDALRDMGLF
+                     GQNMYYHYLGRSGYTVHVQCNASKFHQGALGVFAVPEMCLAGDSNTTTMHTSYQNANP
+                     GEKGGTFTGTFTPDNNQTSPARSSARWITSLEMARCWGMPLCSAQIINLRTNNCATLV
+                     LPYVNSLSLDSMVKHNNWGIAILPLAPLNFVSESSPEIPITLTIAPMCCEFNGLRNIT
+                     LPRLQ"
+     CDS             <744..>947
+                     /note="unnamed protein product; reading frame P1-VP4"
+                     /codon_start=1
+                     /protein_id="CAA24449.1"
+                     /db_xref="GOA:Q84868"
+                     /db_xref="InterPro:IPR003138"
+                     /db_xref="UniProtKB/TrEMBL:Q84868"
+                     /translation="GAQVSSQKVGAHENSNRAYGGSTINYTTINYYRDSASNAASKQD
+                     FSQDPSKFTEPIKDVLIKTAPMLN"
+     CDS             <948..>1760
+                     /note="unnamed protein product; reading frame P1-VP2"
+                     /codon_start=1
+                     /protein_id="CAA24450.1"
+                     /db_xref="GOA:Q84869"
+                     /db_xref="HSSP:1POV"
+                     /db_xref="InterPro:IPR001676"
+                     /db_xref="UniProtKB/TrEMBL:Q84869"
+                     /translation="SPNIEACGYSDRVLQLTLGNSTITTQEAANSVVAYGRWPEYLRD
+                     SEANPVDQPTEPDVAACRFYTLDTVSWTKESRGWWWKLPDALRDMGLFGQNMYYHYLG
+                     RSGYTVHVQCNASKFHQGALGVFAVPEMCLAGDSNTTTMHTSYQNANPGEKGGTFTGT
+                     FTPDNNQTSPARSSARWITSLEMARCWGMPLCSAQIINLRTNNCATLVLPYVNSLSLD
+                     SMVKHNNWGIAILPLAPLNFVSESSPEIPITLTIAPMCCEFNGLRNITLPRLQ"
+     misc_difference 1465
+                     /note="G is GG in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 1526
+                     /note="C is CC in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 1530
+                     /note="C is CC in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 1542
+                     /note="U is C in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 1574
+                     /note="A is C in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 1596
+                     /note="C is A in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 1663
+                     /note="U is C in [4];
+                     conflict"
+                     /citation=[4]
+     CDS             <1761..>2474
+                     /note="unnamed protein product; reading frame P1-VP3"
+                     /codon_start=1
+                     /protein_id="CAA24451.1"
+                     /db_xref="GOA:Q84870"
+                     /db_xref="HSSP:1POV"
+                     /db_xref="InterPro:IPR001676"
+                     /db_xref="UniProtKB/TrEMBL:Q84870"
+                     /translation="GLPVMNTPGSNQYLTADNFQSPCALPEFDVTPPIDIPGEVKNMM
+                     ELAEIDTMIPFDLSATKKNTMEMYRVRLSDKPHTAASILCLSLSPASDPRLSHTMLGE
+                     ILNYYTHWAGSLKFTFLFCGSMMATGKLLVSYAPPGADPPKKRKEAMLGTHVIWDIGL
+                     QSSCTMVVPWISNSTYRQTIDDSFTEGGYISVFYQTRIVVPLSTPREMDILGFVSACN
+                     DFSVRLLRDTTHIEQKALAQ"
+     misc_difference 1996
+                     /note="C is A in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 1999..2002
+                     /note="CCU is AUC in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 2030
+                     /note="C is U in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 2128
+                     /note="C is U in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 2281
+                     /note="G is C in [4];
+                     conflict"
+                     /citation=[4]
+     CDS             <2475..>3380
+                     /note="unnamed protein product; reading frame P1-VP1"
+                     /codon_start=1
+                     /protein_id="CAA24452.1"
+                     /db_xref="GOA:Q84871"
+                     /db_xref="HSSP:2PLV"
+                     /db_xref="InterPro:IPR001676"
+                     /db_xref="UniProtKB/TrEMBL:Q84871"
+                     /translation="GLGQMLESMIDNTVRETVGAATSRDALPNTEASGPTHSKEIPAL
+                     TAVETGATNPLVPSDTVQTRHVVQHRSRSESSIESFFARGACVTIMTVDNPASTTNKD
+                     KLFAVWKITYKDTVQLRRKLEFFTYSRFDMELTFVVTANFTETNNGHALNQVYQIMYV
+                     PPGAPVPEKWDDYTWQTSSNPSIFYTYGTAPARISVPYVGISNAYSHFYDGFSKVPLK
+                     DQSAALGDSLYGAASLNDFGILAVRVVNDHNPTKVTSKIRVYLKPKHIRVWCPRPPRQ
+                     LAYYGPGVDYKDGTLTPLSTKDLTTY"
+     misc_difference 2978
+                     /note="A is G in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 3038
+                     /note="G is A in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 3298
+                     /note="G is GG in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 3302..3303
+                     /note="GC is G in [4];
+                     conflict"
+                     /citation=[4]
+     CDS             <3381..>5105
+                     /note="unnamed protein product; reading frame P2-3b"
+                     /codon_start=1
+                     /protein_id="CAA24453.1"
+                     /db_xref="GOA:Q84872"
+                     /db_xref="HSSP:2HRV"
+                     /db_xref="InterPro:IPR000081"
+                     /db_xref="InterPro:IPR000605"
+                     /db_xref="InterPro:IPR002527"
+                     /db_xref="InterPro:IPR003593"
+                     /db_xref="InterPro:IPR004004"
+                     /db_xref="InterPro:IPR009003"
+                     /db_xref="InterPro:IPR014759"
+                     /db_xref="UniProtKB/TrEMBL:Q84872"
+                     /translation="GFGHQNKAVYTAGYKICNYHLATQDDLQNAVNVMWSRDLLVTES
+                     RAQGTDSIARCNCNAGVYYCESRRKYYPVSFVGPTFQYMEANNYYPVRYQSHMLIGHG
+                     FESPGDCGGILRCHHGVIGIITAGGEGLVAFSDIRDLYAYEEEAMEQGITNYIESLGA
+                     AFGSGFTQQISDKITELTNMVTSTITEKLLKNLIKIISSLVIITRNYEDTTTVLATLA
+                     LLGCDASPWQWLRKKACDVLEIPYVIKQGDSWLKKFTEACQRAKGLEWVSNKISKFID
+                     WLKEKIIPQARDKLEFVTKLRQLEMLENQISTIHQSCPSQEHQEILFNNVRWLSIQSK
+                     RFAPLYAVEAKRIQKLEHTINNYIQFKSKHRIEPVCLLVHGSPGTGKSVATNLIARAI
+                     AERENTSTYSLPPDPSHFDGYKQQGVVIMDDLNQNPDGADMKLFCQMVSTVEFIPPMA
+                     SLEEKGILFTSNYVLASTNSSRISPPTVAHSDALARRFAFDMDIQVMNEYSRDGKLNM
+                     AMATEMCKNCHQPANFKRCCPLVCGKAIQLMDKSSRVRYSIDQITTMIINERNRRSNI
+                     GNCMEALFQ"
+     misc_difference 3652
+                     /note="U is C in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 3691
+                     /note="A is C in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 3761
+                     /note="A is C in [4];
+                     conflict"
+                     /citation=[4]
+     CDS             <3828..>5105
+                     /note="unnamed protein product; reading frame P2-5b"
+                     /codon_start=1
+                     /protein_id="CAA24454.1"
+                     /db_xref="GOA:Q84873"
+                     /db_xref="InterPro:IPR000605"
+                     /db_xref="InterPro:IPR002527"
+                     /db_xref="InterPro:IPR003593"
+                     /db_xref="InterPro:IPR004004"
+                     /db_xref="InterPro:IPR014759"
+                     /db_xref="UniProtKB/TrEMBL:Q84873"
+                     /translation="GITNYIESLGAAFGSGFTQQISDKITELTNMVTSTITEKLLKNL
+                     IKIISSLVIITRNYEDTTTVLATLALLGCDASPWQWLRKKACDVLEIPYVIKQGDSWL
+                     KKFTEACQRAKGLEWVSNKISKFIDWLKEKIIPQARDKLEFVTKLRQLEMLENQISTI
+                     HQSCPSQEHQEILFNNVRWLSIQSKRFAPLYAVEAKRIQKLEHTINNYIQFKSKHRIE
+                     PVCLLVHGSPGTGKSVATNLIARAIAERENTSTYSLPPDPSHFDGYKQQGVVIMDDLN
+                     QNPDGADMKLFCQMVSTVEFIPPMASLEEKGILFTSNYVLASTNSSRISPPTVAHSDA
+                     LARRFAFDMDIQVMNEYSRDGKLNMAMATEMCKNCHQPANFKRCCPLVCGKAIQLMDK
+                     SSRVRYSIDQITTMIINERNRRSNIGNCMEALFQ"
+     CDS             <4119..>5105
+                     /note="unnamed protein product; reading frame P2-X"
+                     /codon_start=1
+                     /protein_id="CAA24455.1"
+                     /db_xref="GOA:Q84874"
+                     /db_xref="InterPro:IPR000605"
+                     /db_xref="InterPro:IPR002527"
+                     /db_xref="InterPro:IPR003593"
+                     /db_xref="InterPro:IPR004004"
+                     /db_xref="InterPro:IPR014759"
+                     /db_xref="UniProtKB/TrEMBL:Q84874"
+                     /translation="GDSWLKKFTEACQRAKGLEWVSNKISKFIDWLKEKIIPQARDKL
+                     EFVTKLRQLEMLENQISTIHQSCPSQEHQEILFNNVRWLSIQSKRFAPLYAVEAKRIQ
+                     KLEHTINNYIQFKSKHRIEPVCLLVHGSPGTGKSVATNLIARAIAERENTSTYSLPPD
+                     PSHFDGYKQQGVVIMDDLNQNPDGADMKLFCQMVSTVEFIPPMASLEEKGILFTSNYV
+                     LASTNSSRISPPTVAHSDALARRFAFDMDIQVMNEYSRDGKLNMAMATEMCKNCHQPA
+                     NFKRCCPLVCGKAIQLMDKSSRVRYSIDQITTMIINERNRRSNIGNCMEALFQ"
+     misc_difference 4154..4155
+                     /note="CC is C in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 4159
+                     /note="G is GC in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 4169
+                     /note="C is A in [4];
+                     conflict"
+                     /citation=[4]
+     CDS             <5106..7364
+                     /note="unnamed protein product; reading frame P3-1b"
+                     /codon_start=1
+                     /protein_id="CAA24456.1"
+                     /db_xref="GOA:Q84875"
+                     /db_xref="HSSP:1RDR"
+                     /db_xref="InterPro:IPR000199"
+                     /db_xref="InterPro:IPR001205"
+                     /db_xref="InterPro:IPR007094"
+                     /db_xref="InterPro:IPR009003"
+                     /db_xref="InterPro:IPR014838"
+                     /db_xref="UniProtKB/TrEMBL:Q84875"
+                     /translation="GPLQYKDLKIDIKTSPPPECINDLLQAVDSQEVRDYCEKKGWIV
+                     NITSQVQTERNINRAMTILQAVTTFAAVAGVVYVMYKLFAGHQGAYTGLPNKKPNVPT
+                     IRTAKVQGPGFDYAVAMAKRNIVTATTSKGEFTMLGVHDNVAILPTHASPGESIVIDG
+                     KEAEILDAKVFEDQAGTNFEITIITLKRNEKFRDIRPHIPTQITETNDGVLIVNTSKY
+                     PNMYVPVRAVTEQGYLNLGGRQTARTLMYNFPTRAGQCGGVITCTGKSSGCMLVDGSH
+                     GFAAALKRSLFTQSQGEIPWMRPSKDAGYPIINAPSKTKLEPSAFHYVFEGVKEPAVL
+                     TKNDPRLKTDFEEAIFSKYVGNKITEVDEYMKEAVDHYAGQLMSLDINIEQMCLEDAM
+                     YGTDGLEALDLSTSAGYPYVAMGKKKRDILNKQTRDTKEMQKLLDTYGINLPLVTYVK
+                     DELRSKTKVEQGKSRLIEASSLNDSVAMRMAFGNLYAAFHKNPGVITGSAVGCDPDLF
+                     WSKIPVLMEEKLFAFDYTGYDASLSPAWFEALKMVLEKIGFGDRVDYIDYLNHSHHLY
+                     KNKTYCVKGGMPSGCSGTSIFNSMINNLIIRTLLLKTYKGIDLDHLKMIAYGDDVIAS
+                     YPHEVDASLLAQSGKDYGLTMTPADKSATFETVTWENVTFLKRFFRADEKYPFLIHPV
+                     MPMKEIHESIRWTKDPRNTQDHVRSLCLLAWHNGEEEYNKFLAKIRSVPIGRALLLPE
+                     YSTLYRRWLDSF"
+     misc_difference 5108
+                     /note="C is A in [4];
+                     conflict"
+                     /citation=[4]
+     CDS             <5367..>5432
+                     /note="unnamed protein product; reading frame P3-VPg"
+                     /codon_start=1
+                     /protein_id="CAA24457.1"
+                     /db_xref="UniProtKB/TrEMBL:Q76R70"
+                     /translation="GAYTGLPNKKPNVPTIRTAKVQ"
+     CDS             <5433..7364
+                     /note="unnamed protein product; reading frame P3-2"
+                     /codon_start=1
+                     /protein_id="CAA24458.1"
+                     /db_xref="GOA:Q84876"
+                     /db_xref="HSSP:1RDR"
+                     /db_xref="InterPro:IPR000199"
+                     /db_xref="InterPro:IPR001205"
+                     /db_xref="InterPro:IPR007094"
+                     /db_xref="InterPro:IPR009003"
+                     /db_xref="UniProtKB/TrEMBL:Q84876"
+                     /translation="GPGFDYAVAMAKRNIVTATTSKGEFTMLGVHDNVAILPTHASPG
+                     ESIVIDGKEAEILDAKVFEDQAGTNFEITIITLKRNEKFRDIRPHIPTQITETNDGVL
+                     IVNTSKYPNMYVPVRAVTEQGYLNLGGRQTARTLMYNFPTRAGQCGGVITCTGKSSGC
+                     MLVDGSHGFAAALKRSLFTQSQGEIPWMRPSKDAGYPIINAPSKTKLEPSAFHYVFEG
+                     VKEPAVLTKNDPRLKTDFEEAIFSKYVGNKITEVDEYMKEAVDHYAGQLMSLDINIEQ
+                     MCLEDAMYGTDGLEALDLSTSAGYPYVAMGKKKRDILNKQTRDTKEMQKLLDTYGINL
+                     PLVTYVKDELRSKTKVEQGKSRLIEASSLNDSVAMRMAFGNLYAAFHKNPGVITGSAV
+                     GCDPDLFWSKIPVLMEEKLFAFDYTGYDASLSPAWFEALKMVLEKIGFGDRVDYIDYL
+                     NHSHHLYKNKTYCVKGGMPSGCSGTSIFNSMINNLIIRTLLLKTYKGIDLDHLKMIAY
+                     GDDVIASYPHEVDASLLAQSGKDYGLTMTPADKSATFETVTWENVTFLKRFFRADEKY
+                     PFLIHPVMPMKEIHESIRWTKDPRNTQDHVRSLCLLAWHNGEEEYNKFLAKIRSVPIG
+                     RALLLPEYSTLYRRWLDSF"
+     CDS             <5433..>5978
+                     /note="unnamed protein product; reading frame P3-7c"
+                     /codon_start=1
+                     /protein_id="CAA24459.1"
+                     /db_xref="GOA:Q84877"
+                     /db_xref="HSSP:1L1N"
+                     /db_xref="InterPro:IPR000199"
+                     /db_xref="InterPro:IPR009003"
+                     /db_xref="UniProtKB/TrEMBL:Q84877"
+                     /translation="GPGFDYAVAMAKRNIVTATTSKGEFTMLGVHDNVAILPTHASPG
+                     ESIVIDGKEAEILDAKVFEDQAGTNFEITIITLKRNEKFRDIRPHIPTQITETNDGVL
+                     IVNTSKYPNMYVPVRAVTEQGYLNLGGRQTARTLMYNFPTRAGQCGGVITCTGKSSGC
+                     MLVDGSHGFAAALKRSLFTQSQ"
+     misc_difference 5593
+                     /note="C is U in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 5614..5618
+                     /note="UGUUU is CGCUC in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 5640
+                     /note="U is C in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 5781
+                     /note="C is G in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 5898..5899
+                     /note="AA is AAA in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 5921..5923
+                     /note="GGA is GGGAA in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 5962..5963
+                     /note="UA is AC in [4];
+                     conflict"
+                     /citation=[4]
+     CDS             <5979..7364
+                     /note="unnamed protein product; reading frame P3-4b"
+                     /codon_start=1
+                     /protein_id="CAA24460.1"
+                     /db_xref="GOA:Q84878"
+                     /db_xref="HSSP:1RDR"
+                     /db_xref="InterPro:IPR001205"
+                     /db_xref="InterPro:IPR007094"
+                     /db_xref="UniProtKB/TrEMBL:Q84878"
+                     /translation="GEIPWMRPSKDAGYPIINAPSKTKLEPSAFHYVFEGVKEPAVLT
+                     KNDPRLKTDFEEAIFSKYVGNKITEVDEYMKEAVDHYAGQLMSLDINIEQMCLEDAMY
+                     GTDGLEALDLSTSAGYPYVAMGKKKRDILNKQTRDTKEMQKLLDTYGINLPLVTYVKD
+                     ELRSKTKVEQGKSRLIEASSLNDSVAMRMAFGNLYAAFHKNPGVITGSAVGCDPDLFW
+                     SKIPVLMEEKLFAFDYTGYDASLSPAWFEALKMVLEKIGFGDRVDYIDYLNHSHHLYK
+                     NKTYCVKGGMPSGCSGTSIFNSMINNLIIRTLLLKTYKGIDLDHLKMIAYGDDVIASY
+                     PHEVDASLLAQSGKDYGLTMTPADKSATFETVTWENVTFLKRFFRADEKYPFLIHPVM
+                     PMKEIHESIRWTKDPRNTQDHVRSLCLLAWHNGEEEYNKFLAKIRSVPIGRALLLPEY
+                     STLYRRWLDSF"
+     misc_difference 5989
+                     /note="C is A in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 6011
+                     /note="C is A in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 6013
+                     /note="C is U in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 6253
+                     /note="U is C in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 6837..6839
+                     /note="CCA is CA in [2];
+                     conflict"
+                     /citation=[2]
+     misc_difference 6970..6971
+                     /note="UU is UUU in [2];
+                     conflict"
+                     /citation=[2]
+     misc_difference 7250
+                     /note="U is UU in [2];
+                     conflict"
+                     /citation=[2]
+     misc_difference 7402
+                     /note="C is U in [4];
+                     conflict"
+                     /citation=[4]
+     misc_difference 7432..7433
+                     /note="GG is G in [4];
+                     conflict"
+                     /citation=[4]
+ORIGIN      
+        1 ttaaaacagc tctggggttg tacccacccc agaggcccac gtggcggcta gtactccggt
+       61 attgcggtac ccttgtacgc ctgttttata ctcccttccc gtaacttaga cgcacaaaac
+      121 caagttcaat agaagggggt acaaaccagt accaccacga acaagcactt ctgtttcccc
+      181 ggtgatgtcg tatagactgc ttgcgtggtt gaaagcgacg gatccgttat ccgcttatgt
+      241 acttcgagaa gcccagtacc acctcggaat cttcgatgcg ttggttagca ctcaacccca
+      301 gagtgtagct taggctgatg agtctggaca tccctcaccg gtgacggtgt tccaggctgc
+      361 gttggcggcc tacctatggc taacgcatgg gacgctagtt gtgaacaagg tgtgaagagc
+      421 ctattgagct acataagaat cctccggccc ctgaatgcgg ctaatcccaa cctcggagca
+      481 ggtggttcac aaaccagtga ttggcctgtc gtaacgcgca agtccgtggc ggaaccgact
+      541 actttgggtg tccgtgtttc cttttatttt attgtggctg cttatggtga caatcacaga
+      601 ttgttatcat aaagcgaatt ggattggcca tccggtgaaa gtgagactca ttatctatct
+      661 gtttgctgga tccgctccat tgagtgtgtt tactctaagt acaatttcaa cagttatttc
+      721 aatcagacaa ttgtatcata atgggtgctc aggtttcatc acagaaagtg ggcgcacatg
+      781 aaaactcaaa tagagcgtat ggtggttcta ccattaatta caccaccatt aattattata
+      841 gagattcagc tagtaacgcg gcttcgaaac aggacttctc tcaagaccct tccaagttca
+      901 ccgagcccat caaggatgtc ctgataaaaa cagccccaat gctaaactcg ccaaacatag
+      961 aggcttgcgg gtatagcgat agagtactgc aattaacact gggaaactcc actataacca
+     1021 cacaggaggc ggctaattca gtagtcgctt atgggcgttg gcctgaatat ctgagggaca
+     1081 gcgaagccaa tccagtggac cagccgacag aaccagacgt cgctgcatgc aggttttata
+     1141 cgctagacac cgtgtcttgg acgaaagagt cgcgagggtg gtggtggaag ttgcctgatg
+     1201 cactgaggga catgggactc tttgggcaaa atatgtacta ccactaccta ggtaggtccg
+     1261 ggtacaccgt gcatgtacag tgtaacgcct ccaaattcca ccagggggca ctaggggtat
+     1321 tcgccgtacc agagatgtgt ctggccgggg atagcaacac cactaccatg cacaccagct
+     1381 atcaaaatgc caatcctggc gagaaaggag gcactttcac gggtacgttc actcctgaca
+     1441 acaaccagac atcacctgcc cgcagttctg cccggtggat tacctccttg gaaatggcac
+     1501 gttgttgggg aatgcctttg tgttccgcac agataataaa cttacggacc aacaactgtg
+     1561 ctacactggt actaccttac gtgaactccc tctcgctaga tagtatggta aagcacaata
+     1621 attggggaat tgcaatatta ccattggccc cattaaattt tgttagtgag tcctccccag
+     1681 agattccaat caccttgacc atagccccta tgtgctgtga gttcaatgga ttaagaaaca
+     1741 tcaccctgcc acgcttacag ggcctgccgg tcatgaacac ccctggtagc aatcaatatc
+     1801 ttactgcaga caacttccag tcaccgtgtg cgctgcctga atttgatgtg accccaccta
+     1861 ttgacatacc cggtgaagta aagaacatga tggaattggc agaaatcgac accatgattc
+     1921 cctttgactt aagtgccaca aaaaagaaca ccatggaaat gtatagggtt cggttaagtg
+     1981 acaaaccaca tacagccgcc tccatactct gcctgtcact ctctccagcc tcagatccta
+     2041 ggttgtcaca tactatgctt ggagaaatcc taaattacta cacacactgg gcaggatccc
+     2101 tgaagttcac gtttctgttc tgtggatcca tgatggcaac tggcaaactg ttggtgtcat
+     2161 acgcgcctcc tggagccgac ccaccaaaga agcgtaagga ggcgatgttg ggaacacatg
+     2221 tgatctggga cataggactg cagtcctcat gtactatggt agtgccatgg attagcaaca
+     2281 gcacgtatcg gcaaaccata gatgatagtt tcaccgaagg cggatacatc agcgtcttct
+     2341 accaaactag aatagtcgtc cctctttcga cacccagaga gatggacatc cttggttttg
+     2401 tgtcagcgtg taatgacttc agcgtgcgct tgttgcgaga taccacacat atagagcaaa
+     2461 aagcgctagc acaggggtta ggtcagatgc ttgaaagcat gattgacaac acagtccgtg
+     2521 aaacggtggg ggcggcaaca tctagagacg ctctcccaaa cactgaagcc agtggaccaa
+     2581 cacactccaa ggaaattccg gcactcaccg cagtggaaac tggggccaca aatccactag
+     2641 tcccttctga tacagtgcaa accagacatg ttgtacaaca taggtcaagg tcagagtcta
+     2701 gcatagagtc tttcttcgcg cggggtgcat gcgtgaccat tatgaccgtg gataacccag
+     2761 cttccaccac gaataaggat aagctatttg cagtgtggaa gatcacttat aaagatactg
+     2821 tccagttacg gaggaaattg gagttcttca cctattctag atttgatatg gaacttacct
+     2881 ttgtggttac tgcaaatttc actgagacta acaatgggca tgccttaaat caagtgtacc
+     2941 aaattatgta cgtaccacca ggcgctccag tgcccgaaaa atgggacgac tacacatggc
+     3001 aaacctcatc aaatccatca atcttttaca cctacgggac agctccagcc cggatctcgg
+     3061 taccgtatgt tggtatttcg aacgcctatt cacactttta cgacggtttt tccaaagtac
+     3121 cactgaagga ccagtcggca gcactaggtg actcccttta tggtgcagca tctctaaatg
+     3181 acttcggtat tttggctgtt agagtagtca atgatcacaa cccgaccaag gtcacctcca
+     3241 aaatcagagt gtatctaaaa cccaaacaca tcagagtctg gtgcccgcgt ccaccgaggc
+     3301 agctggcgta ctacggccct ggagtggatt acaaggatgg tacgcttaca cccctctcca
+     3361 ccaaggatct gaccacatat ggattcggac accaaaacaa agcggtgtac actgcaggtt
+     3421 acaaaatttg caactaccac ttggccactc aggatgattt gcaaaacgca gtgaacgtca
+     3481 tgtggagtag agacctctta gtcacagaat caagagccca gggcaccgat tcaatcgcaa
+     3541 ggtgcaattg caacgcaggg gtgtactact gcgagtctag aaggaaatac tacccagtat
+     3601 ccttcgttgg cccaacgttc cagtacatgg aggctaataa ctattaccca gttaggtacc
+     3661 agtcccatat gctcattggc catggattcg aatctccagg ggattgtggt ggcatactca
+     3721 gatgtcacca cggggtgata gggatcatta ctgctggtgg agaagggttg gttgcatttt
+     3781 cagacattag agacttgtat gcctacgaag aagaagccat ggaacaaggc atcaccaatt
+     3841 acatagagtc acttggggcc gcatttggaa gtggatttac tcagcagatt agcgacaaaa
+     3901 taacagagtt gaccaatatg gtgaccagta ccatcactga aaagctactt aagaacttga
+     3961 tcaagatcat atcctcacta gttattataa ctaggaacta tgaagacacc acaacagtgc
+     4021 tcgctaccct ggcccttctt gggtgtgatg cttcaccatg gcagtggctt agaaagaaag
+     4081 catgcgatgt tctggagata ccttatgtca tcaagcaagg tgacagttgg ttgaagaagt
+     4141 ttactgaagc atgccaacga gctaagggcc tggagtgggt gtcaaacaaa atctcaaaat
+     4201 tcattgattg gctcaaggag aaaattatcc cacaagctag agataagttg gaatttgtaa
+     4261 caaaacttag acaactagaa atgctggaaa accaaatctc aactatacac caatcatgcc
+     4321 ctagtcagga acaccaggaa attctattca ataatgtcag atggttatcc atccagtcta
+     4381 agaggtttgc ccctctttac gcagtggaag ccaaaagaat acagaaacta gagcatacta
+     4441 ttaacaacta catacagttc aagagcaaac accgtattga accagtatgt ttgctagtac
+     4501 atggcagccc cggaacaggt aaatctgtag caaccaacct gattgctaga gccatagctg
+     4561 aaagagaaaa cacgtccacg tactcgctac ccccggatcc atcacacttc gacggataca
+     4621 aacaacaggg agtggtgatt atggacgacc tgaatcaaaa cccagatggt gcggacatga
+     4681 agctgttctg tcagatggta tcaacagtgg agtttatacc acccatggca tccctggagg
+     4741 agaaaggaat cctgtttact tcaaattacg ttctagcatc cacaaactca agcagaattt
+     4801 ccccccccac tgtggcacac agtgatgcat tagccaggcg ctttgcgttc gacatggaca
+     4861 ttcaggtcat gaatgagtat tctagagatg ggaaattgaa catggccatg gctactgaaa
+     4921 tgtgtaagaa ctgtcaccaa ccagcaaact ttaagagatg ctgtccttta gtgtgtggta
+     4981 aggcaattca attaatggac aaatcttcca gagttagata cagtattgac cagatcacta
+     5041 caatgattat caatgagaga aacagaagat ccaacattgg caattgtatg gaggctttgt
+     5101 ttcaaggccc actccagtat aaagacttga aaattgacat caagacgagt ccccctcctg
+     5161 aatgtatcaa tgacttgctc caagcagttg actcccagga ggtgagagat tactgtgaga
+     5221 agaagggttg gatagtcaac atcaccagcc aggttcaaac agaaaggaac atcaacaggg
+     5281 caatgacaat tctacaagcg gtgacaacct tcgccgcagt ggctggagtt gtctatgtca
+     5341 tgtataaact gtttgctgga caccagggag catacactgg tttaccaaac aaaaaaccca
+     5401 acgtgcccac cattcggaca gcaaaggtac aaggaccagg gttcgattac gcagtggcta
+     5461 tggctaaaag aaacattgtt acagcaacta ctagcaaggg agagttcact atgttaggag
+     5521 tccacgacaa cgtggctatt ttaccaaccc acgcttcacc tggtgaaagc attgtgatcg
+     5581 atggcaaaga agcggagatc ttggatgcca aagtgtttga agatcaagca ggaaccaatt
+     5641 ttgaaatcac tataatcact ctaaagagaa atgaaaagtt cagagacatt agaccacata
+     5701 tacctactca aatcactgag acaaatgatg gagtcttgat cgtgaacact agcaagtacc
+     5761 ccaatatgta tgttcctgtc cgtgctgtga ctgaacaggg atatctaaat ctcggtgggc
+     5821 gccaaactgc tcgtactcta atgtacaact ttccaaccag agcaggacag tgtggtggag
+     5881 tcatcacatg tactgggaag tcatcgggat gcatgttggt ggacggttca cacgggtttg
+     5941 cagcggccct gaagcgatca ttattcactc agagtcaagg tgaaatcccg tggatgagac
+     6001 cttcgaagga cgcgggatat ccaatcataa atgccccgtc caaaaccaag cttgaaccca
+     6061 gtgctttcca ctatgtgttt gaaggggtga aggaaccagc agtcctcact aaaaacgatc
+     6121 ccaggcttaa gacagacttt gaggaggcaa ttttctccaa gtacgtgggt aacaaaatta
+     6181 ctgaagtgga tgagtacatg aaagaggcag tagaccacta tgctggccag ctcatgtcac
+     6241 tagacatcaa catagaacaa atgtgcttgg aggatgccat gtatggcact gatggtctag
+     6301 aagcacttga tttgtccacc agtgctggct acccttatgt agcaatggga aagaagaaga
+     6361 gagacatctt gaacaaacaa accagagaca ctaaggaaat gcaaaaactg ctcgacacat
+     6421 atggaatcaa cctcccactg gtgacttatg taaaggatga acttagatcc aaaacaaagg
+     6481 ttgagcaggg gaaatccaga ttaattgaag cttctagttt gaatgactca gtggcaatga
+     6541 gaatggcttt tgggaaccta tatgctgctt ttcacaaaaa cccaggagtg ataacaggtt
+     6601 cagcagtggg gtgcgatcca gatttgtttt ggagcaaaat tccggtattg atggaagaga
+     6661 agctgtttgc ttttgactac acagggtatg atgcatctct cagccctgct tggttcgagg
+     6721 cactaaagat ggtgcttgag aaaatcggat tcggagacag agttgactac atcgactacc
+     6781 taaaccactc acaccacctg tacaagaata aaacatactg tgtcaagggc ggtatgccat
+     6841 ctggctgctc aggcacttca atttttaact caatgattaa caacttgatt atcaggacac
+     6901 tcttactgaa aacctacaag ggcatagatt tagaccacct aaaaatgatt gcctatggtg
+     6961 atgatgtaat tgcttcctac ccccatgaag ttgacgctag tctcctagcc caatcaggaa
+     7021 aagactatgg actaactatg actccagctg acaaatcagc tacatttgaa acagtcacat
+     7081 gggagaatgt aacattcttg aagagattct tcagggcaga cgagaaatac ccatttctta
+     7141 ttcatccagt aatgccaatg aaggaaattc atgaatcaat tagatggact aaagatccta
+     7201 ggaacactca ggatcacgtt cgctctctgt gccttttagc ttggcacaat ggcgaagaag
+     7261 aatataacaa attcctagct aaaatcagga gtgtgccaat tggaagagct ttattgctcc
+     7321 cagagtactc aacattgtac cgccgttggc ttgactcatt ttagtaaccc tacctcagtc
+     7381 gaattggatt gggtcatact gctgtagggg taaatttttc tttaattcgg agg
+//
+
