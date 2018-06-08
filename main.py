@@ -42,35 +42,11 @@ The Hamming distance between:
      1011101  and  1001001  is 2.
      2173896  and  2233796  is 3.
 """
-
 import string
 from Bio import SeqIO
-
-
-def hamming_distance(seq1, seq2):
-    """ Calculate the Hamming distance between two bit strings """
-    assert len(seq1) == len(seq2)
-    return sum(c1 != c2 for c1, c2 in zip(seq1, seq2))
-
-
-def print_result(distance_data, current_index, alpha):
-    """ print result to txt file """
-    file = open("dm.txt", "a")
-    file.write(alpha[current_index])
-    for distance in distance_data:
-        file.write(", " + str(distance))
-    file.write("\n")
-    file.close()
-
-
-def print_header(cnt, alpha):
-    """ print header (A, B, C..) to file """
-    file = open("dm.txt", "a")
-    for index in range(cnt):
-        file.write(", " + alpha[index])
-    file.write("\n")
-    file.close()
-
+from utils.distance_matrix import distance_matrix_func
+from utils.q_matrix import q_matrix, find_min
+from utils.tree import calculate_branch_length_est
 
 if __name__ == '__main__':
     filename = input("please give input file with extension: ")
@@ -85,14 +61,32 @@ if __name__ == '__main__':
     count = 0
     alphabet = list(string.ascii_uppercase)
     sequences = []
-    result_j = []
+    complete_tree = {}
     for seq_record in seq_input:
         sequences.append(seq_record)
         count += 1
-    print_header(count, alphabet)
-    for i in range(count):
-        for j in range(count):
-            hd = hamming_distance(sequences[i], sequences[j])
-            result_j.append(hd)
-        print_result(result_j, i, alphabet)
-        result_j = []
+    # dna sequence elimizde (array olarak)
+    distance_matrix = distance_matrix_func(cnt=count, alpha=alphabet, seq=sequences)
+    # distance matrix elimizde
+
+    temp_distance_matrix = [
+        [0, 5, 9, 9, 8],
+        [5, 0, 10, 10, 9],
+        [9, 10, 0, 8, 7],
+        [9, 10, 8, 0, 3],
+        [8, 9, 7, 3, 0]
+    ]
+    temp_count = 5
+
+    q = q_matrix(d_matrix=temp_distance_matrix, taxa_count=len(temp_distance_matrix))
+    # q matrix elimizde
+    index_of_a, index_of_b = find_min(q_mat=q, cnt=temp_count)
+    # minimum değerlerin indexleri elimizde
+    calculate_branch_length_est(d_matrix=temp_distance_matrix,
+                                taxa_count=temp_count,
+                                node_one=index_of_a,
+                                node_two=index_of_b,
+                                comp_tree=complete_tree)
+    # calculated new node and distance to connection
+
+    c = 4
