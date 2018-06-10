@@ -61,23 +61,16 @@ if __name__ == '__main__':
     else:
         exit(0)
     seq_input = SeqIO.parse(filename, extension)
-    count = 0
+    distance_matrix_length = 0
     alphabet = list(string.ascii_lowercase)
     sequences = []
-    complete_tree = {}
+    distance_from_joined_node_to_joint = {}
     for seq_record in seq_input:
         sequences.append(seq_record)
-        count += 1
+        distance_matrix_length += 1
     # dna sequence elimizde (array olarak)
-    distance_matrix = distance_matrix_func(cnt=count, seq=sequences, alpha=alphabet)
+    distance_matrix = distance_matrix_func(cnt=distance_matrix_length, seq=sequences, alpha=alphabet)
     # distance matrix elimizde
-    temp_distance_matrix = [
-        [0, 5, 9, 9, 8],
-        [5, 0, 10, 10, 9],
-        [9, 10, 0, 8, 7],
-        [9, 10, 8, 0, 3],
-        [8, 9, 7, 3, 0]
-    ]
 
     temp_distance_dict = {
         'aa': 0, 'ab': 5, 'ac': 9, 'ad': 9, 'ae': 8,
@@ -92,37 +85,39 @@ if __name__ == '__main__':
     # do
     q = q_matrix(d_matrix=temp_distance_dict, taxa_count=temp_count, alpha=alphabet)
     # q matrix elimizde
-    index_of_a, index_of_b = find_min(q_mat=q, cnt=temp_count, alpha=alphabet)
+
+    first_node_to_join, second_node_to_join = find_min(q_mat=q, cnt=temp_count, alpha=alphabet)
     # minimum değerlerin indexleri elimizde
+
     step = -1
     backward_step = calculate_branch_length_est(d_matrix=temp_distance_dict,
                                                 taxa_count=temp_count,
-                                                node_one=index_of_a,
-                                                node_two=index_of_b,
-                                                comp_tree=complete_tree,
+                                                node_one=first_node_to_join,
+                                                node_two=second_node_to_join,
+                                                comp_tree=distance_from_joined_node_to_joint,
                                                 tree_step=step,
                                                 alpha=alphabet
                                                 )
     step -= 1
     # calculated new node and distance to connection
 
-    clean_d_m, remaining_nodes = clear_distance_matrix(temp_distance_dict, node_one=index_of_a, node_two=index_of_b)
+    clean_d_m, remaining_nodes = clear_distance_matrix(temp_distance_dict,
+                                                       node_one=first_node_to_join,
+                                                       node_two=second_node_to_join
+                                                       )
     # delete items if key include connected nodes
 
     new_distances = find_new_distances(d_matrix=temp_distance_dict,
                                        nodes=remaining_nodes,
-                                       node_one=index_of_a,
-                                       node_two=index_of_b,
+                                       node_one=first_node_to_join,
+                                       node_two=second_node_to_join,
                                        step=backward_step
                                        )
-    # distance of remaining nodes t connected nodes
+    # distance of remaining nodes to connected nodes
 
-    updated_d_m = update_distance_matrix(d_matrix=clean_d_m,
-                                         node_one=index_of_a,
-                                         node_two=index_of_b,
+    updated_d_m = update_distance_matrix(cleaned_d_matrix=clean_d_m,
                                          alpha=alphabet,
-                                         created_dist=new_distances,
-                                         rm_nodes=remaining_nodes,
-                                         cnt=temp_count)
+                                         new_dist=new_distances)
     # update distance matrix. and repeat q matrix so on...
-    a = 5
+
+    q = q_matrix(d_matrix=updated_d_m, taxa_count=int(sqrt(len(updated_d_m))), alpha=alphabet)
