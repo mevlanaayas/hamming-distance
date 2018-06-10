@@ -15,3 +15,9 @@ def print_header(cnt, alpha):
         file.write(", " + alpha[index])
     file.write("\n")
     file.close()
+
+
+def print_tree(phy_tree):
+    for key, value in phy_tree.items():
+        print(str(key[0]) + "-" * int(value) + str(key[1]) + "\n")
+        print("key   " + str(key) + "   value:  " + str(value))

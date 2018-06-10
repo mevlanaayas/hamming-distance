@@ -48,6 +48,7 @@ from math import sqrt
 from Bio import SeqIO
 from utils.distance_matrix import distance_matrix_func, update_distance_matrix, clear_distance_matrix, \
     find_new_distances
+from utils.printer import print_tree
 from utils.q_matrix import q_matrix, find_min
 from utils.tree import calculate_branch_length_est, build_tree
 
@@ -80,6 +81,7 @@ if __name__ == '__main__':
         'ea': 8, 'eb': 9, 'ec': 7, 'ed': 3, 'ee': 0
     }
     step = -1
+    # temp_distance_dict = distance_matrix
     while int(sqrt(len(temp_distance_dict))) > 2:
         temp_count = int(sqrt(len(temp_distance_dict)))
         # while distance_matrix has nodes to join
@@ -127,3 +129,7 @@ if __name__ == '__main__':
 
     build_tree(complete_tree=distance_from_joined_node_to_joint, remaining_distances=new_distances)
     # DONE result in distance_from_joined_node_to_joint now.
+
+    # construct tree to print easily
+
+    print_tree(distance_from_joined_node_to_joint)
