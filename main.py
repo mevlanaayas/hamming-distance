@@ -49,7 +49,7 @@ from Bio import SeqIO
 from utils.distance_matrix import distance_matrix_func, update_distance_matrix, clear_distance_matrix, \
     find_new_distances
 from utils.q_matrix import q_matrix, find_min
-from utils.tree import calculate_branch_length_est
+from utils.tree import calculate_branch_length_est, build_tree
 
 if __name__ == '__main__':
     filename = input("please give input file with extension: ")
@@ -79,45 +79,51 @@ if __name__ == '__main__':
         'da': 9, 'db': 10, 'dc': 8, 'dd': 0, 'de': 3,
         'ea': 8, 'eb': 9, 'ec': 7, 'ed': 3, 'ee': 0
     }
-    temp_count = int(sqrt(len(temp_distance_dict)))
-
-    # while distance_matrix has nodes to join
-    # do
-    q = q_matrix(d_matrix=temp_distance_dict, taxa_count=temp_count, alpha=alphabet)
-    # q matrix elimizde
-
-    first_node_to_join, second_node_to_join = find_min(q_mat=q, cnt=temp_count, alpha=alphabet)
-    # minimum değerlerin indexleri elimizde
-
     step = -1
-    backward_step = calculate_branch_length_est(d_matrix=temp_distance_dict,
-                                                taxa_count=temp_count,
-                                                node_one=first_node_to_join,
-                                                node_two=second_node_to_join,
-                                                comp_tree=distance_from_joined_node_to_joint,
-                                                tree_step=step,
-                                                alpha=alphabet
-                                                )
-    step -= 1
-    # calculated new node and distance to connection
+    while int(sqrt(len(temp_distance_dict))) > 2:
+        temp_count = int(sqrt(len(temp_distance_dict)))
+        # while distance_matrix has nodes to join
+        # do
 
-    clean_d_m, remaining_nodes = clear_distance_matrix(temp_distance_dict,
-                                                       node_one=first_node_to_join,
-                                                       node_two=second_node_to_join
-                                                       )
-    # delete items if key include connected nodes
+        q = q_matrix(d_matrix=temp_distance_dict, taxa_count=temp_count, alpha=alphabet)
+        # q matrix elimizde
 
-    new_distances = find_new_distances(d_matrix=temp_distance_dict,
-                                       nodes=remaining_nodes,
-                                       node_one=first_node_to_join,
-                                       node_two=second_node_to_join,
-                                       step=backward_step
-                                       )
-    # distance of remaining nodes to connected nodes
+        first_node_to_join, second_node_to_join = find_min(q_mat=q)
+        # minimum değerlerin indexleri elimizde
 
-    updated_d_m = update_distance_matrix(cleaned_d_matrix=clean_d_m,
-                                         alpha=alphabet,
-                                         new_dist=new_distances)
-    # update distance matrix. and repeat q matrix so on...
+        backward_step = calculate_branch_length_est(d_matrix=temp_distance_dict,
+                                                    taxa_count=temp_count,
+                                                    node_one=first_node_to_join,
+                                                    node_two=second_node_to_join,
+                                                    comp_tree=distance_from_joined_node_to_joint,
+                                                    tree_step=step,
+                                                    alpha=alphabet
+                                                    )
+        step -= 1
+        # calculated new node and distance to connection
 
-    q = q_matrix(d_matrix=updated_d_m, taxa_count=int(sqrt(len(updated_d_m))), alpha=alphabet)
+        clean_d_m, remaining_nodes = clear_distance_matrix(temp_distance_dict,
+                                                           node_one=first_node_to_join,
+                                                           node_two=second_node_to_join
+                                                           )
+        # delete items if key include connected nodes
+
+        new_distances = find_new_distances(d_matrix=temp_distance_dict,
+                                           nodes=remaining_nodes,
+                                           node_one=first_node_to_join,
+                                           node_two=second_node_to_join,
+                                           step=backward_step
+                                           )
+        # distance of remaining nodes to connected nodes
+
+        temp_distance_dict = update_distance_matrix(cleaned_d_matrix=clean_d_m,
+                                                    alpha=alphabet,
+                                                    new_dist=new_distances
+                                                    )
+        # update distance matrix. and repeat q matrix so on...
+
+    # result in distance_from_joined_node_to_joint
+    # and we need to add last connection that is stored in new_distances
+
+    build_tree(complete_tree=distance_from_joined_node_to_joint, remaining_distances=new_distances)
+    # DONE result in distance_from_joined_node_to_joint now.

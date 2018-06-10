@@ -21,15 +21,11 @@ def q_matrix(d_matrix, taxa_count, alpha):
     return q_matrix_result
 
 
-def find_min(q_mat, cnt, alpha):
+def find_min(q_mat):
     min_of_q = 0
     nodes_to_join = []
-    for alpha1 in alpha:
-        for alpha2 in alpha:
-            if alpha.index(alpha1) < cnt and alpha.index(alpha2) < cnt:
-                if alpha1 < alpha2:
-                    key = alpha1 + alpha2
-                    if q_mat[key] < min_of_q:
-                        min_of_q = q_mat[key]
-                        nodes_to_join = alpha1, alpha2
+    for key in q_mat.keys():
+        if q_mat[key] < min_of_q:
+            min_of_q = q_mat[key]
+            nodes_to_join = key[0], key[1]
     return nodes_to_join
